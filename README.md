@@ -1,1 +1,1 @@
-# springboot-opentelemetry
+# python-opentelemetry
