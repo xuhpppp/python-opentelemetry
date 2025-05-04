@@ -1,10 +1,12 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from orders.models import Order
 from orders.services import get_order_by_id
+from config.databases import get_db
+from sqlalchemy.orm import Session
 
 router = APIRouter()
 
 
 @router.get("/orders/{id}", response_model=Order)
-def get_order_by_id_router(id: int):
-    return get_order_by_id(id)
+def get_order_by_id_router(id: int, db: Session = Depends(get_db)):
+    return get_order_by_id(id, db=db)
