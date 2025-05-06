@@ -1,6 +1,6 @@
 ## About The Project
 
-![<img width="300"/>](./docs/imgs/Cover.png)
+![<img width="300"/>](./docs/imgs/Cover.jpg)
 
 This is a small project about integrating OpenTelemetry to export metrics, logs, and traces from a FastAPI application. Since it is only a demo, the source code does not follow any specific standards or conventions and is intended for reference purposes only.
 
@@ -12,6 +12,7 @@ To get started, the only requirement is Docker (since everything is packaged wit
 * [![OpenTelemetry][OpenTelemetry]][OpenTelemetry-url]
 * [![Python][Python]][Python-url]
 * [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
+* [![Jaeger][Jaeger]][Jaeger-url]
 
 
 ## Getting Started
@@ -40,16 +41,23 @@ To get started, the only requirement is Docker (since everything is packaged wit
   ```sh
   cd python-opentelemetry
   ```
-3. Run docker compose up to start the application
+3. Setup .env for your environment
+  ```sh
+  cp .env.example .env
+  nano .env
+  ```
+4. Run docker compose up to start the application
   ```sh
   docker compose up -d
   ```
 
 ### How to use
 The FastAPI backend will serve as an Order Service for the system and expose the following API endpoint:
-http://localhost:8080/order/{id}
+http://localhost:8080/orders/{id}
 
 (For now, the database only contains {id} values 1 and 2)
+
+You can access the Jaeger UI through this URL: http://localhost:16686
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -61,3 +69,5 @@ http://localhost:8080/order/{id}
 [OpenTelemetry-url]: https://opentelemetry.io/
 [PostgreSQL]: https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=ffffff
 [PostgreSQL-url]: https://www.postgresql.org/
+[Jaeger]: https://img.shields.io/badge/Jaeger-66CFE3?style=for-the-badge&logo=jaeger&logoColor=ffffff
+[Jaeger-url]: https://www.jaegertracing.io/
