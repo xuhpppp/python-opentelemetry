@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.0.16">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.2.15">
   <diagram name="Trang-1" id="g1JHGm7F3xTqKIjxZCLi">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="WdcBxDvD3YkukcvI_A6Z-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#3333FF;" vertex="1" parent="1">
-          <mxGeometry x="150" y="130" width="610" height="390" as="geometry" />
+          <mxGeometry x="150" y="130" width="610" height="550" as="geometry" />
         </mxCell>
         <mxCell id="WdcBxDvD3YkukcvI_A6Z-2" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://pbs.twimg.com/profile_images/1816856437567406080/ByISu1ft_400x400.jpg;" vertex="1" parent="1">
           <mxGeometry x="150" y="130" width="40" height="40" as="geometry" />
@@ -51,6 +51,40 @@
         </mxCell>
         <mxCell id="PyuIM4OST405FSh96Bw6-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.jaegertracing.io//img/jaeger-icon-color.png;" vertex="1" parent="1">
           <mxGeometry x="540" y="335.5" width="43" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ohM18QvkFa5yJ1XM8FFH-1" target="WdcBxDvD3YkukcvI_A6Z-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-7" value="scrape" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="ohM18QvkFa5yJ1XM8FFH-6">
+          <mxGeometry x="-0.0554" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ohM18QvkFa5yJ1XM8FFH-1" target="ohM18QvkFa5yJ1XM8FFH-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-13" value="scrape" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="ohM18QvkFa5yJ1XM8FFH-12">
+          <mxGeometry x="-0.0588" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF8000;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="520" y="470" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-2" value="Prometheus&lt;div&gt;- 9090:9090&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="505" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static-00.iconduck.com/assets.00/prometheus-icon-2047x2048-b3aicxlu.png;" vertex="1" parent="1">
+          <mxGeometry x="540" y="497.98" width="44" height="44.04" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-8" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#808080;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="210" y="535" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-9" value="cAdvisor&lt;div&gt;- 8080:8080&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="300" y="570" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ohM18QvkFa5yJ1XM8FFH-11" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.netdata.cloud/img/cadvisor.png;" vertex="1" parent="1">
+          <mxGeometry x="232.75" y="561.46" width="43" height="47.07" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
