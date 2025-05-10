@@ -1,4 +1,3 @@
-import os
 from fastapi import FastAPI, Request
 from orders.routers import router as order_router
 
